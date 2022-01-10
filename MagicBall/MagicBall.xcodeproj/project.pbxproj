@@ -7,19 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8478D09D278CD16100AF20AD /* AnswerSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478D09C278CD16100AF20AD /* AnswerSupplier.swift */; };
+		8478D09F278CD1E500AF20AD /* OfflineAnswerSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478D09E278CD1E500AF20AD /* OfflineAnswerSupplier.swift */; };
+		8478D0A1278CD20400AF20AD /* OnlineAnswerSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478D0A0278CD20400AF20AD /* OnlineAnswerSupplier.swift */; };
+		8478D0A4278CD2AB00AF20AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478D0A3278CD2AB00AF20AD /* Constants.swift */; };
+		8478D0A6278CD79300AF20AD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8478D0A5278CD79300AF20AD /* .swiftlint.yml */; };
 		84B56765278CB234005528C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56764278CB234005528C8 /* AppDelegate.swift */; };
 		84B56767278CB234005528C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56766278CB234005528C8 /* SceneDelegate.swift */; };
 		84B56769278CB234005528C8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56768278CB234005528C8 /* MainViewController.swift */; };
 		84B5676C278CB234005528C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B5676A278CB234005528C8 /* Main.storyboard */; };
 		84B5676E278CB237005528C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B5676D278CB237005528C8 /* Assets.xcassets */; };
 		84B56771278CB237005528C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B5676F278CB237005528C8 /* LaunchScreen.storyboard */; };
-		84B5677A278CB4EB005528C8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 84B56779278CB4EB005528C8 /* .swiftlint.yml */; };
 		84B56782278CB9E1005528C8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56781278CB9E1005528C8 /* SettingViewController.swift */; };
 		84B56786278CC567005528C8 /* MagicAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56784278CC567005528C8 /* MagicAnswer.swift */; };
 		84B56787278CC567005528C8 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56785278CC567005528C8 /* Answers.swift */; };
+		EF40D39DBAD7CEDA0CB063A4 /* Pods_MagicBall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AA5A1C630914CA44EFEC01 /* Pods_MagicBall.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A80CF318BD1B191773B3E33 /* Pods-MagicBall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicBall.debug.xcconfig"; path = "Target Support Files/Pods-MagicBall/Pods-MagicBall.debug.xcconfig"; sourceTree = "<group>"; };
+		8478D09C278CD16100AF20AD /* AnswerSupplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerSupplier.swift; sourceTree = "<group>"; };
+		8478D09E278CD1E500AF20AD /* OfflineAnswerSupplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineAnswerSupplier.swift; sourceTree = "<group>"; };
+		8478D0A0278CD20400AF20AD /* OnlineAnswerSupplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineAnswerSupplier.swift; sourceTree = "<group>"; };
+		8478D0A3278CD2AB00AF20AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8478D0A5278CD79300AF20AD /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		84B56761278CB234005528C8 /* MagicBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B56764278CB234005528C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B56766278CB234005528C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,10 +39,11 @@
 		84B5676D278CB237005528C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B56770278CB237005528C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B56772278CB237005528C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84B56779278CB4EB005528C8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		84B56781278CB9E1005528C8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		84B56784278CC567005528C8 /* MagicAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicAnswer.swift; sourceTree = "<group>"; };
 		84B56785278CC567005528C8 /* Answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
+		ABE457F8B075BE029448C3DD /* Pods-MagicBall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicBall.release.xcconfig"; path = "Target Support Files/Pods-MagicBall/Pods-MagicBall.release.xcconfig"; sourceTree = "<group>"; };
+		E1AA5A1C630914CA44EFEC01 /* Pods_MagicBall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicBall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +51,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF40D39DBAD7CEDA0CB063A4 /* Pods_MagicBall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08852860B421344EAC1B5816 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A80CF318BD1B191773B3E33 /* Pods-MagicBall.debug.xcconfig */,
+				ABE457F8B075BE029448C3DD /* Pods-MagicBall.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8478D09B278CCF9000AF20AD /* AnswerSupplier */ = {
+			isa = PBXGroup;
+			children = (
+				8478D09C278CD16100AF20AD /* AnswerSupplier.swift */,
+				8478D09E278CD1E500AF20AD /* OfflineAnswerSupplier.swift */,
+				8478D0A0278CD20400AF20AD /* OnlineAnswerSupplier.swift */,
+			);
+			path = AnswerSupplier;
+			sourceTree = "<group>";
+		};
+		8478D0A2278CD29D00AF20AD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8478D0A3278CD2AB00AF20AD /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		84B56758278CB234005528C8 = {
 			isa = PBXGroup;
 			children = (
+				8478D0A5278CD79300AF20AD /* .swiftlint.yml */,
 				84B56763278CB234005528C8 /* MagicBall */,
 				84B56762278CB234005528C8 /* Products */,
+				08852860B421344EAC1B5816 /* Pods */,
+				B7F5429F647683A9338F6C9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +107,8 @@
 		84B56763278CB234005528C8 /* MagicBall */ = {
 			isa = PBXGroup;
 			children = (
+				8478D0A2278CD29D00AF20AD /* Common */,
+				8478D09B278CCF9000AF20AD /* AnswerSupplier */,
 				84B5677C278CB98A005528C8 /* Modules */,
 				84B5677B278CB5B6005528C8 /* DefaultFiles */,
 				84B5676A278CB234005528C8 /* Main.storyboard */,
@@ -76,7 +121,6 @@
 		84B5677B278CB5B6005528C8 /* DefaultFiles */ = {
 			isa = PBXGroup;
 			children = (
-				84B56779278CB4EB005528C8 /* .swiftlint.yml */,
 				84B5676F278CB237005528C8 /* LaunchScreen.storyboard */,
 				84B56764278CB234005528C8 /* AppDelegate.swift */,
 				84B56766278CB234005528C8 /* SceneDelegate.swift */,
@@ -135,6 +179,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		B7F5429F647683A9338F6C9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1AA5A1C630914CA44EFEC01 /* Pods_MagicBall.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,10 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84B56775278CB237005528C8 /* Build configuration list for PBXNativeTarget "MagicBall" */;
 			buildPhases = (
+				DFE341F78366BE160B190498 /* [CP] Check Pods Manifest.lock */,
 				84B5675D278CB234005528C8 /* Sources */,
 				84B5675E278CB234005528C8 /* Frameworks */,
 				84B5675F278CB234005528C8 /* Resources */,
 				84B56778278CB49D005528C8 /* Run SwiftLint */,
+				23D03314D79D557993797D5E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,7 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B5677A278CB4EB005528C8 /* .swiftlint.yml in Resources */,
+				8478D0A6278CD79300AF20AD /* .swiftlint.yml in Resources */,
 				84B56771278CB237005528C8 /* LaunchScreen.storyboard in Resources */,
 				84B5676E278CB237005528C8 /* Assets.xcassets in Resources */,
 				84B5676C278CB234005528C8 /* Main.storyboard in Resources */,
@@ -204,6 +258,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		23D03314D79D557993797D5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MagicBall/Pods-MagicBall-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MagicBall/Pods-MagicBall-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MagicBall/Pods-MagicBall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		84B56778278CB49D005528C8 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +293,28 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		DFE341F78366BE160B190498 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagicBall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -230,9 +323,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B56769278CB234005528C8 /* MainViewController.swift in Sources */,
+				8478D0A1278CD20400AF20AD /* OnlineAnswerSupplier.swift in Sources */,
 				84B56787278CC567005528C8 /* Answers.swift in Sources */,
 				84B56765278CB234005528C8 /* AppDelegate.swift in Sources */,
 				84B56782278CB9E1005528C8 /* SettingViewController.swift in Sources */,
+				8478D0A4278CD2AB00AF20AD /* Constants.swift in Sources */,
+				8478D09D278CD16100AF20AD /* AnswerSupplier.swift in Sources */,
+				8478D09F278CD1E500AF20AD /* OfflineAnswerSupplier.swift in Sources */,
 				84B56786278CC567005528C8 /* MagicAnswer.swift in Sources */,
 				84B56767278CB234005528C8 /* SceneDelegate.swift in Sources */,
 			);
@@ -378,6 +475,7 @@
 		};
 		84B56776278CB237005528C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A80CF318BD1B191773B3E33 /* Pods-MagicBall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -406,6 +504,7 @@
 		};
 		84B56777278CB237005528C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABE457F8B075BE029448C3DD /* Pods-MagicBall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
