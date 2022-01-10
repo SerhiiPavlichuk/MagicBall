@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Magic_eight_ball.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
