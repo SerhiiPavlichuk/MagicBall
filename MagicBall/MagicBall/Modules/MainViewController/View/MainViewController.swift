@@ -8,11 +8,17 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+let test = OnlineAnswerSupplier()
 
     @IBOutlet weak var answerLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         answerLabel.isHidden = true
+        
+        test.getNetworkAnswer { (result) in
+            print(result)
+        }
     }
 }

@@ -11,11 +11,11 @@ struct AnswerSupplier {
 
     private let onlineAnswerSupplier = OnlineAnswerSupplier()
 
-    func getAnswer(completion: @escaping(Result<MagicAnswer, Error>) -> Void) {
+    func getAnswer(completion: @escaping(Result<Answers, Error>) -> Void) {
         onlineAnswerSupplier.getNetworkAnswer { (result) in
             switch result {
-            case .failure:
-
+            case .failure: 
+print("failure")
             case .success:
                 completion(result)
             }
