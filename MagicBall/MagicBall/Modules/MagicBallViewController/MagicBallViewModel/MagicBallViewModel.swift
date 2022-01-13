@@ -9,13 +9,11 @@ import Foundation
 
 class MagicBallViewModel {
 
-    private let answerSupplier = AnswerSupplier()
-
-    func getAnswer(completion: @escaping (() -> ())) {
-        answerSupplier.getAnswer { (result) in
+    func getAnswer(completion: @escaping (String) -> Void) {
+        AnswerSupplier.shared.getAnswer { (result) in
             switch result {
             case .success(let answer):
-                MagicBallViewController.shared.updateAnswerLabel(with: answer.answer!)
+                completion(answer.answer!)
             case .failure:
                 MagicBallViewController.shared.updateAnswerLabel(with: "")
             }

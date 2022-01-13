@@ -13,7 +13,7 @@ struct OnlineAnswerSupplier {
     static let shared = OnlineAnswerSupplier()
     private let endPoint = Constants.Network.endpoint
 
-    func getNetworkAnswer(completion: @escaping (Result<MagicAnswer, Error>) -> Void){
+    func getNetworkAnswer(completion: @escaping (Result<MagicAnswer, Error>) -> Void) {
         AF.request(endPoint).responseJSON { responce in
             let decoder = JSONDecoder()
             if let data = try? decoder.decode(Answers.self, from: responce.data!) {

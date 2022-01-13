@@ -8,25 +8,30 @@
 import UIKit
 
 class MagicBallViewController: UIViewController {
-
+    
     static let shared = MagicBallViewController()
     private let viewModel = MagicBallViewModel()
-
+    
     @IBOutlet weak var answerLabel: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         answerLabel.isHidden = true
-
+        
     }
+    
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         guard motion == .motionShake else { return }
-        self.answerLabel.isHidden = false
-        self.viewModel.getAnswer {
-        }
+        
+        self.viewModel.getAnswer(completion: { answer in
+            self.answerLabel.isHidden = false
+            self.updateAnswerLabel(with: answer)
+        })
     }
-
+    
     func updateAnswerLabel(with answer: String) {
-        self.answerLabel?.text = answer
+        DispatchQueue.main.async {
+            self.answerLabel?.text = answer
+        }
     }
 }
