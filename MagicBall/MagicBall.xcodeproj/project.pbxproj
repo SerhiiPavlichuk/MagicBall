@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84789BF02790AF14007449B5 /* MagicBallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84789BEF2790AF14007449B5 /* MagicBallViewModel.swift */; };
 		8478D09D278CD16100AF20AD /* AnswerSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478D09C278CD16100AF20AD /* AnswerSupplier.swift */; };
 		8478D09F278CD1E500AF20AD /* OfflineAnswerSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478D09E278CD1E500AF20AD /* OfflineAnswerSupplier.swift */; };
 		8478D0A1278CD20400AF20AD /* OnlineAnswerSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478D0A0278CD20400AF20AD /* OnlineAnswerSupplier.swift */; };
@@ -14,7 +15,7 @@
 		8478D0A6278CD79300AF20AD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8478D0A5278CD79300AF20AD /* .swiftlint.yml */; };
 		84B56765278CB234005528C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56764278CB234005528C8 /* AppDelegate.swift */; };
 		84B56767278CB234005528C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56766278CB234005528C8 /* SceneDelegate.swift */; };
-		84B56769278CB234005528C8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56768278CB234005528C8 /* MainViewController.swift */; };
+		84B56769278CB234005528C8 /* MagicBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56768278CB234005528C8 /* MagicBallViewController.swift */; };
 		84B5676C278CB234005528C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B5676A278CB234005528C8 /* Main.storyboard */; };
 		84B5676E278CB237005528C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B5676D278CB237005528C8 /* Assets.xcassets */; };
 		84B56771278CB237005528C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B5676F278CB237005528C8 /* LaunchScreen.storyboard */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		7A80CF318BD1B191773B3E33 /* Pods-MagicBall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicBall.debug.xcconfig"; path = "Target Support Files/Pods-MagicBall/Pods-MagicBall.debug.xcconfig"; sourceTree = "<group>"; };
+		84789BEF2790AF14007449B5 /* MagicBallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallViewModel.swift; sourceTree = "<group>"; };
 		8478D09C278CD16100AF20AD /* AnswerSupplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerSupplier.swift; sourceTree = "<group>"; };
 		8478D09E278CD1E500AF20AD /* OfflineAnswerSupplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineAnswerSupplier.swift; sourceTree = "<group>"; };
 		8478D0A0278CD20400AF20AD /* OnlineAnswerSupplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineAnswerSupplier.swift; sourceTree = "<group>"; };
@@ -34,7 +36,7 @@
 		84B56761278CB234005528C8 /* MagicBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B56764278CB234005528C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B56766278CB234005528C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84B56768278CB234005528C8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		84B56768278CB234005528C8 /* MagicBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallViewController.swift; sourceTree = "<group>"; };
 		84B5676B278CB234005528C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84B5676D278CB237005528C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B56770278CB237005528C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 				ABE457F8B075BE029448C3DD /* Pods-MagicBall.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		84789BEE2790AEDE007449B5 /* MagicBallViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84789BEF2790AF14007449B5 /* MagicBallViewModel.swift */,
+			);
+			path = MagicBallViewModel;
 			sourceTree = "<group>";
 		};
 		8478D09B278CCF9000AF20AD /* AnswerSupplier */ = {
@@ -132,24 +142,25 @@
 			isa = PBXGroup;
 			children = (
 				84B5677F278CB9B4005528C8 /* SettingViewController */,
-				84B5677D278CB998005528C8 /* MainViewController */,
+				84B5677D278CB998005528C8 /* MagicBallViewController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		84B5677D278CB998005528C8 /* MainViewController */ = {
+		84B5677D278CB998005528C8 /* MagicBallViewController */ = {
 			isa = PBXGroup;
 			children = (
+				84789BEE2790AEDE007449B5 /* MagicBallViewModel */,
 				84B56783278CC555005528C8 /* Models */,
 				84B5677E278CB9A1005528C8 /* View */,
 			);
-			path = MainViewController;
+			path = MagicBallViewController;
 			sourceTree = "<group>";
 		};
 		84B5677E278CB9A1005528C8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				84B56768278CB234005528C8 /* MainViewController.swift */,
+				84B56768278CB234005528C8 /* MagicBallViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,7 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B56769278CB234005528C8 /* MainViewController.swift in Sources */,
+				84B56769278CB234005528C8 /* MagicBallViewController.swift in Sources */,
 				8478D0A1278CD20400AF20AD /* OnlineAnswerSupplier.swift in Sources */,
 				84B56787278CC567005528C8 /* Answers.swift in Sources */,
 				84B56765278CB234005528C8 /* AppDelegate.swift in Sources */,
@@ -332,6 +343,7 @@
 				8478D09F278CD1E500AF20AD /* OfflineAnswerSupplier.swift in Sources */,
 				84B56786278CC567005528C8 /* MagicAnswer.swift in Sources */,
 				84B56767278CB234005528C8 /* SceneDelegate.swift in Sources */,
+				84789BF02790AF14007449B5 /* MagicBallViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
