@@ -9,14 +9,16 @@ import Foundation
 
 class MagicBallViewModel {
 
-    func getAnswer(completion: @escaping (String) -> Void) {
-        AnswerSupplier.shared.getAnswer { (result) in
-            switch result {
-            case .success(let answer):
-                completion(answer.answer!)
-            case .failure:
-                MagicBallViewController.shared.updateAnswerLabel(with: "")
+    func getOnlineAnswer(completion: @escaping (String) -> Void) {
+        OnlineAnswerSupplier.shared.getNetworkAnswer { (result) in
+            if let answer = result.answer {
+                completion(answer)
             }
+        }
+    }
+    func getOfflineAnswer(completion: @escaping (String) -> Void) {
+        OfflineAnswerSupplier.shared.getOfflineAnswer { (offLineResult) in
+            completion(offLineResult)
         }
     }
 }

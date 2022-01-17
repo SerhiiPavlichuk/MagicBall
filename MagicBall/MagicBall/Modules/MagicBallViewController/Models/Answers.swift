@@ -12,5 +12,4 @@ struct Answers: Codable {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
 		magic = try values.decodeIfPresent(MagicAnswer.self, forKey: .magic)
 	}
-
 }

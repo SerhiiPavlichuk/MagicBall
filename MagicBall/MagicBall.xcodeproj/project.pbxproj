@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847818EE279480A80057E994 /* OfflineAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847818ED279480A80057E994 /* OfflineAnswers.swift */; };
 		84789BF02790AF14007449B5 /* MagicBallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84789BEF2790AF14007449B5 /* MagicBallViewModel.swift */; };
-		8478D09D278CD16100AF20AD /* AnswerSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478D09C278CD16100AF20AD /* AnswerSupplier.swift */; };
 		8478D09F278CD1E500AF20AD /* OfflineAnswerSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478D09E278CD1E500AF20AD /* OfflineAnswerSupplier.swift */; };
 		8478D0A1278CD20400AF20AD /* OnlineAnswerSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478D0A0278CD20400AF20AD /* OnlineAnswerSupplier.swift */; };
 		8478D0A4278CD2AB00AF20AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478D0A3278CD2AB00AF20AD /* Constants.swift */; };
@@ -27,8 +27,8 @@
 
 /* Begin PBXFileReference section */
 		7A80CF318BD1B191773B3E33 /* Pods-MagicBall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicBall.debug.xcconfig"; path = "Target Support Files/Pods-MagicBall/Pods-MagicBall.debug.xcconfig"; sourceTree = "<group>"; };
+		847818ED279480A80057E994 /* OfflineAnswers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineAnswers.swift; sourceTree = "<group>"; };
 		84789BEF2790AF14007449B5 /* MagicBallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallViewModel.swift; sourceTree = "<group>"; };
-		8478D09C278CD16100AF20AD /* AnswerSupplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerSupplier.swift; sourceTree = "<group>"; };
 		8478D09E278CD1E500AF20AD /* OfflineAnswerSupplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineAnswerSupplier.swift; sourceTree = "<group>"; };
 		8478D0A0278CD20400AF20AD /* OnlineAnswerSupplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineAnswerSupplier.swift; sourceTree = "<group>"; };
 		8478D0A3278CD2AB00AF20AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -77,14 +77,13 @@
 			path = MagicBallViewModel;
 			sourceTree = "<group>";
 		};
-		8478D09B278CCF9000AF20AD /* AnswerSupplier */ = {
+		8478D09B278CCF9000AF20AD /* AnswerSuppliers */ = {
 			isa = PBXGroup;
 			children = (
-				8478D09C278CD16100AF20AD /* AnswerSupplier.swift */,
 				8478D09E278CD1E500AF20AD /* OfflineAnswerSupplier.swift */,
 				8478D0A0278CD20400AF20AD /* OnlineAnswerSupplier.swift */,
 			);
-			path = AnswerSupplier;
+			path = AnswerSuppliers;
 			sourceTree = "<group>";
 		};
 		8478D0A2278CD29D00AF20AD /* Common */ = {
@@ -118,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				8478D0A2278CD29D00AF20AD /* Common */,
-				8478D09B278CCF9000AF20AD /* AnswerSupplier */,
+				8478D09B278CCF9000AF20AD /* AnswerSuppliers */,
 				84B5677C278CB98A005528C8 /* Modules */,
 				84B5677B278CB5B6005528C8 /* DefaultFiles */,
 				84B5676A278CB234005528C8 /* Main.storyboard */,
@@ -186,6 +185,7 @@
 			children = (
 				84B56785278CC567005528C8 /* Answers.swift */,
 				84B56784278CC567005528C8 /* MagicAnswer.swift */,
+				847818ED279480A80057E994 /* OfflineAnswers.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -339,9 +339,9 @@
 				84B56765278CB234005528C8 /* AppDelegate.swift in Sources */,
 				84B56782278CB9E1005528C8 /* SettingViewController.swift in Sources */,
 				8478D0A4278CD2AB00AF20AD /* Constants.swift in Sources */,
-				8478D09D278CD16100AF20AD /* AnswerSupplier.swift in Sources */,
 				8478D09F278CD1E500AF20AD /* OfflineAnswerSupplier.swift in Sources */,
 				84B56786278CC567005528C8 /* MagicAnswer.swift in Sources */,
+				847818EE279480A80057E994 /* OfflineAnswers.swift in Sources */,
 				84B56767278CB234005528C8 /* SceneDelegate.swift in Sources */,
 				84789BF02790AF14007449B5 /* MagicBallViewModel.swift in Sources */,
 			);
