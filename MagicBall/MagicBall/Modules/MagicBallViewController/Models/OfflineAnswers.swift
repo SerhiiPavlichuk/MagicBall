@@ -19,13 +19,8 @@ struct OfflineAnswers {
             UserDefaults.standard.set(newValue, forKey: "offlineAnswer")
         }
     }
-
-    mutating func saveCustomAnswer(_ customAnswer: [String]?, completion: @escaping(() -> ())) {
-        guard let customAnswer = customAnswer else { return }
-        self.offlineAnswers = customAnswer
-    }
-
-//    func saveCustomAnswer(_ customAnswer: [String]) -> [String] {
-//        return offlineAnswers + customAnswer
+    
+//    mutating func saveCustomAnswer(_ customAnswer: [String], completion: @escaping(() -> ())) {
+//        self.offlineAnswers = customAnswer
 //    }
 }

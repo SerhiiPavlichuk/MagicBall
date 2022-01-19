@@ -12,4 +12,10 @@ struct Constants {
     struct Network {
         static let endpoint = "https://8ball.delegator.com/magic/JSON/letsrock?"
     }
+
+    struct UI {
+
+        static let textSavedMessage = "Answer saved!"
+        static let okMessage = "Ok 😊"
+    }
 }
