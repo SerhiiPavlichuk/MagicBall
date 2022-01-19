@@ -18,6 +18,9 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
 
     }
     
+    @IBAction func saveAnswerButtonPressed(_ sender: Any) {
+        OfflineAnswers.shared.offlineAnswers.append(userInputTextField.text!)
+    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false

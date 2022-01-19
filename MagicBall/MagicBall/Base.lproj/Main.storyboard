@@ -107,6 +107,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Save Answer">
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveAnswerButtonPressed:" destination="3aa-Nv-UzD" eventType="touchUpInside" id="HkQ-ms-ECj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SYb-af-Uyl"/>

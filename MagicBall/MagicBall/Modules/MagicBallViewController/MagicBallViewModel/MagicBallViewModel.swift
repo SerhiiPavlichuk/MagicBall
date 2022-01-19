@@ -17,8 +17,9 @@ class MagicBallViewModel {
         }
     }
     func getOfflineAnswer(completion: @escaping (String) -> Void) {
-        OfflineAnswerSupplier.shared.getOfflineAnswer { (offLineResult) in
+        OfflineAnswerSupplier.shared.getOfflineAnswer(completion: { (offLineResult) in
+
             completion(offLineResult)
-        }
+        })
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 
 struct OfflineAnswers {
 
-    static let shared = OfflineAnswers()
+    static var shared = OfflineAnswers()
     var offlineAnswers: [String] {
         get {
             return UserDefaults.standard.array(forKey: "offlineAnswer") as? [String]
@@ -19,4 +19,13 @@ struct OfflineAnswers {
             UserDefaults.standard.set(newValue, forKey: "offlineAnswer")
         }
     }
+
+    mutating func saveCustomAnswer(_ customAnswer: [String]?, completion: @escaping(() -> ())) {
+        guard let customAnswer = customAnswer else { return }
+        self.offlineAnswers = customAnswer
+    }
+
+//    func saveCustomAnswer(_ customAnswer: [String]) -> [String] {
+//        return offlineAnswers + customAnswer
+//    }
 }
