@@ -9,17 +9,24 @@ import UIKit
 
 class MagicBallViewController: UIViewController {
 
+    // MARK: - Outlets
+
+    @IBOutlet weak var answerLabel: UILabel!
+
+    // MARK: - Properties
+
     static let shared = MagicBallViewController()
     private let viewModel = MagicBallViewModel()
 
-    @IBOutlet weak var answerLabel: UILabel!
+    // MARK: - Life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         answerLabel.isHidden = true
-
     }
+
+    // MARK: - Methods
 
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         guard motion == .motionShake else { return }
@@ -31,7 +38,7 @@ class MagicBallViewController: UIViewController {
         }
     }
 
-     func updateAnswerLabel(with answer: String) {
+    private func updateAnswerLabel(with answer: String) {
         DispatchQueue.main.async {
             self.answerLabel?.text = answer
         }

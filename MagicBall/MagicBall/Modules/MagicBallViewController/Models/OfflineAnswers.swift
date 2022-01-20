@@ -12,15 +12,11 @@ struct OfflineAnswers {
     static var shared = OfflineAnswers()
     var offlineAnswers: [String] {
         get {
-            return UserDefaults.standard.array(forKey: "offlineAnswer") as? [String]
+            return UserDefaults.standard.array(forKey: "offlineAnswers") as? [String]
             ?? ["Just do it!", "Change your mind", "Nope", "Yes"]
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: "offlineAnswer")
+            UserDefaults.standard.set(newValue, forKey: "offlineAnswers")
         }
     }
-    
-//    mutating func saveCustomAnswer(_ customAnswer: [String], completion: @escaping(() -> ())) {
-//        self.offlineAnswers = customAnswer
-//    }
 }

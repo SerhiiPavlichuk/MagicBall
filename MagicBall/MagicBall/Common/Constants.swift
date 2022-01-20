@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Constants {
 
@@ -14,8 +15,13 @@ struct Constants {
     }
 
     struct UI {
-
         static let textSavedMessage = "Answer saved!"
         static let okMessage = "Ok 😊"
+    }
+
+    struct ButtonAction {
+        static let disabledButtonAlpha: CGFloat = 0.6
+        static let enabledButtonAlpha: CGFloat =  1
+        static let buttonSaveName = "Save Answer"
     }
 }

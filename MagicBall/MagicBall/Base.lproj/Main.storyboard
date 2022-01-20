@@ -104,9 +104,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sim-zj-uH5" secondAttribute="height" multiplier="278:35" id="8fq-IP-42s"/>
                                 </constraints>
-                                <buttonConfiguration key="configuration" style="filled" title="Save Answer">
-                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="filled"/>
                                 <connections>
                                     <action selector="saveAnswerButtonPressed:" destination="3aa-Nv-UzD" eventType="touchUpInside" id="HkQ-ms-ECj"/>
                                 </connections>
@@ -128,6 +126,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Setting" image="gear" catalog="system" id="e8U-vM-pGK"/>
                     <connections>
+                        <outlet property="saveButton" destination="sim-zj-uH5" id="Qcq-yn-8Wi"/>
                         <outlet property="userInputTextField" destination="QCP-La-x4w" id="1EC-HL-0Uw"/>
                     </connections>
                 </viewController>
