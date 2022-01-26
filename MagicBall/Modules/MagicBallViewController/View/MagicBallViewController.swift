@@ -11,6 +11,7 @@ class MagicBallViewController: UIViewController {
 
     // MARK: - Outlets
 
+    @IBOutlet weak var ballImageView: UIImageView!
     @IBOutlet weak var answerLabel: UILabel!
 
     // MARK: - Properties
@@ -30,7 +31,7 @@ class MagicBallViewController: UIViewController {
 
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         guard motion == .motionShake else { return }
-
+        self.ballImageView.shake()
         if OnlineAnswerSupplier.shared.checkConnection() {
             getOnlineAnswer()
         } else {
