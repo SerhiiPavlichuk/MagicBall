@@ -25,7 +25,8 @@ struct Constants {
         static let buttonSaveName = "Save Answer"
     }
 
-    struct UserDeafaultsKey {
+    struct UserDeafaults {
         static let key = "offlineAnswers"
+        static let defaultOfflineAnswers = ["Just do it!", "Change your mind", "Nope", "Yes"]
     }
 }
