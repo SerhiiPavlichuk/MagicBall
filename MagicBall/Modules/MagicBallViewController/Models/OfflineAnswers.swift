@@ -12,11 +12,11 @@ struct OfflineAnswers {
     static var shared = OfflineAnswers()
     var offlineAnswers: [String] {
         get {
-            return UserDefaults.standard.array(forKey: "offlineAnswers") as? [String]
+            return UserDefaults.standard.array(forKey: Constants.UserDeafaultsKey.key) as? [String]
             ?? ["Just do it!", "Change your mind", "Nope", "Yes"]
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: "offlineAnswers")
+            UserDefaults.standard.set(newValue, forKey: Constants.UserDeafaultsKey.key)
         }
     }
 }

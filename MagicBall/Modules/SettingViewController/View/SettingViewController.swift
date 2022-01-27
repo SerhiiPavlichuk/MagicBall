@@ -64,7 +64,6 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
         func setupEnterTextState() {
             saveButton.isEnabled = true
             saveButton.alpha = Constants.ButtonAction.enabledButtonAlpha
-            //            saveButton.setTitle(Constants.ButtonAction.buttonSaveName, for: .normal)
         }
 
         switch screenState {
@@ -139,8 +138,6 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Action
     
     @IBAction func saveAnswerButtonPressed(_ sender: Any) {
-//        viewModel.saveUserTextFieldInput(userInputTextField.text!)
-//        alert()
         determineNextState(afterAction: .buttonPressed)
     }
 }

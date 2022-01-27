@@ -24,4 +24,8 @@ struct Constants {
         static let enabledButtonAlpha: CGFloat =  1
         static let buttonSaveName = "Save Answer"
     }
+
+    struct UserDeafaultsKey {
+        static let key = "offlineAnswers"
+    }
 }
